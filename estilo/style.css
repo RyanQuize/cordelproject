@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap');
+
+
+:root {
+    --fontetitulo: 'Passion One', cursive; 
+    --fontepo: 'Lobster', cursive;
+    --fontefoot: 'Phudu', cursive;;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+header{
+    min-width: 500px;
+    max-width: 1400px;
+    color: white;
+    background-image: linear-gradient(to bottom, rgb(97, 97, 97) , black );
+    padding: 30px 50px 50px 50px;
+    margin: auto;
+    
+}
+
+header > p{
+    text-align: center;
+    font-family: var(--fontefoot);
+    
+}
+
+header > p > a{
+    text-decoration: none;
+    color: white;
+    font-family: var(--fontefoot);
+
+}
+
+h1 {
+    font-family: var(--fontetitulo);
+    text-align: center;
+    font-size: 6em;
+}
+
+
+/* Article */
+
+
+h2{
+    font-family: var(--fontepo);
+    font-weight: normal;
+    font-size: 3.1em;
+    text-align: justify;
+    line-height: 1.9em;
+}
+
+section{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
+    border-radius: 10px;
+    
+}
+
+.img{
+    color: white;
+    
+}
+
+article{
+    padding: 3em;
+    
+}
+
+#artic1{
+    background: url('/imagens/background001.jpg') center top/cover no-repeat fixed;
+    
+}
+
+#artic2{
+    background: url('/imagens/background002.jpg') center top/cover no-repeat fixed;
+}
+
+/* Media Querry */
+
+@media (max-width: 600px) {
+    h2{
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 300px){
+    h2{
+        font-size: 1.7em;
+    }
+
+}
+
+
+/* Footer */
+
+footer {
+    font-family: var(--fontefoot);
+    color: white;
+    background-color: black;
+    padding: 1px;
+    text-align: center;
+    min-width: 400px;
+    max-width: 1400px;
+}
