@@ -22,8 +22,6 @@
 }
 
 header{
-    min-width: 500px;
-    max-width: 1400px;
     color: white;
     background-image: linear-gradient(to bottom, rgb(97, 97, 97) , black );
     padding: 30px 50px 50px 50px;
@@ -60,6 +58,10 @@ h2{
     font-size: 3.1em;
     text-align: justify;
     line-height: 1.9em;
+    white-space: nowrap;
+    overflow: hidden;
+    flex-wrap: wrap;
+    
 }
 
 section{
@@ -72,38 +74,54 @@ section{
 
 .img{
     color: white;
+    padding: 10px;
     
 }
 
 article{
     padding: 3em;
+    margin: auto;
     
 }
 
 #artic1{
     background: url('/imagens/background001.jpg') center top/cover no-repeat fixed;
+    height: auto;
+    max-width: 100%;
+    margin: auto;
     
 }
 
 #artic2{
     background: url('/imagens/background002.jpg') center top/cover no-repeat fixed;
+    height: auto;
+    max-width: 100%;
+    margin: auto;
 }
 
 /* Media Querry */
 
 @media (max-width: 600px) {
     h2{
-        font-size: 2em;
+        font-size: 1.8em;
+    }
+    header{
+        font-size: 0.8em;
     }
 }
 
-@media (max-width: 300px){
+@media (max-width: 400px){
+    .img{
+        font-size: 1.5em;
+    }
     h2{
-        font-size: 1.7em;
+        font-size: 1.5em;
     }
-
+    header{
+        font-size: 0.7em;
+    }
+    
 }
-
 
 /* Footer */
 
