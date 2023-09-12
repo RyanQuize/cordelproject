@@ -21,6 +21,10 @@
     border: 0;
 }
 
+html, body {
+    min-height: 100vh;
+}
+
 header{
     color: white;
     background-image: linear-gradient(to bottom, rgb(97, 97, 97) , black );
@@ -42,10 +46,15 @@ header > p > a{
 
 }
 
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
 h1 {
     font-family: var(--fontetitulo);
     text-align: center;
     font-size: 6em;
+    font-variant: small-caps;
 }
 
 
@@ -69,7 +78,10 @@ section{
     background-color: rgba(0, 0, 0, 0.514);
     text-shadow: 1px 1px 0px black;
     border-radius: 10px;
-    
+}
+
+#artic1,#artic2{
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.514);
 }
 
 .img{
@@ -79,24 +91,18 @@ section{
 }
 
 article{
-    padding: 3em;
-    margin: auto;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 3em;
     
 }
 
 #artic1{
-    background: url('/imagens/background001.jpg') center top/cover no-repeat fixed;
-    height: auto;
-    max-width: 100%;
-    margin: auto;
-    
+    background: url('../imagens/background001.jpg') right center/cover no-repeat fixed;
 }
 
 #artic2{
-    background: url('/imagens/background002.jpg') center top/cover no-repeat fixed;
-    height: auto;
-    max-width: 100%;
-    margin: auto;
+    background: url('../imagens/background002.jpg') right center/cover no-repeat fixed;
 }
 
 /* Media Querry */
@@ -132,4 +138,10 @@ footer {
     padding: 1px;
     text-align: center;
     margin: auto;
+}
+
+footer > p > a{
+    text-decoration: none;
+    color: white;
+    font-family: var(--fontefoot);
 }
